@@ -106,6 +106,10 @@ section{border-top:1px solid var(--line)}
 .credit .what{font-weight:600}
 .credit .what small{display:block;font-weight:400;color:var(--muted);font-size:15px}
 
+.skills{display:grid;gap:18px;margin-top:32px}
+.skill-group{display:grid;gap:10px}
+.skill-group ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.skill-group li{font-size:15px;padding:7px 12px;border:1px solid var(--line);border-radius:2px;background:var(--bg-2)}
 /* Contact */
 .contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(28px,5vw,72px);padding-block:8px 88px}
 .contact dl{margin:0;display:grid;gap:22px}
@@ -179,7 +183,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:1
       </div>
       <div class="ctas">
         <a class="btn primary" href="https://vimeo.com/angelhernandezmedia" target="_blank" rel="noopener"><span class="rec" aria-hidden="true"></span>Watch on Vimeo</a>
-        <a class="btn" href="#contact">Start a project</a>
+        <a class="btn" href="#contact">Get in touch</a>
       </div>
     </div>
   </div>
@@ -189,7 +193,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:1
     <div class="wrap">
       <div class="sec-head">
         <h2>Selected Work</h2>
-        <span class="label">Commercial · Promo · Live events</span>
+        <span class="label">Cinematography · Editing · Producing</span>
       </div>
       <div class="grid">
         <figure class="sm"><img loading="lazy" alt="Project still" src="work-01.png" onerror="this.onerror=null;this.src='https://static.wixstatic.com/media/decd39_34fa45f011c94914933cb2e827f47f5e~mv2.png/v1/fill/w_900,h_900,q_90/decd39_34fa45f011c94914933cb2e827f47f5e~mv2.png'"><span class="title">America's Homeless Vets</span><button class="play" data-vimeo="1083061900" aria-label="Play America's Homeless Vets video"></button></figure>
@@ -222,6 +226,11 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:1
             <div class="credit"><span class="yr">2017 – Now</span><span class="what">Freelance Video Production<small>Angel Hernandez Media</small></span></div>
             <div class="credit"><span class="yr">2016 – 2017</span><span class="what">President, Hornet Film Society<small>B.A. Film Production &amp; B.A. Communications, Sacramento State</small></span></div>
           </div>
+          <div class="skills">
+            <div class="skill-group"><span class="label">Production</span><ul><li>Cinematography</li><li>Camera operation</li><li>Directing</li><li>Interviews &amp; documentary</li><li>Live event coverage</li></ul></div>
+            <div class="skill-group"><span class="label">Post-production</span><ul><li>Video editing</li><li>Promo &amp; commercial spots</li><li>Multi-format delivery</li></ul></div>
+            <div class="skill-group"><span class="label">Content &amp; social</span><ul><li>YouTube</li><li>Instagram</li><li>Facebook</li><li>LinkedIn</li><li>X</li><li>Web content</li></ul></div>
+          </div>
         </div>
       </div>
     </div>
@@ -241,13 +250,13 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:1
         </dl>
         <!-- Form is delivered by FormSubmit (free). The first submission sends a one-time confirmation email to angel@angelhernandezmedia.com; click it to activate. -->
         <form action="https://formsubmit.co/angel@angelhernandezmedia.com" method="POST">
-          <input type="hidden" name="_subject" value="New inquiry from angelhernandezmedia.com">
+          <input type="hidden" name="_subject" value="New message from angelhernandezmedia.com">
           <input type="hidden" name="_template" value="table">
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
           <label><span class="label">First name</span><input id="first" name="First name" required autocomplete="given-name"></label>
           <label><span class="label">Last name</span><input id="last" name="Last name" autocomplete="family-name"></label>
           <label class="full"><span class="label">Email</span><input id="email" type="email" name="email" required autocomplete="email"></label>
-          <label class="full"><span class="label">Tell me about your project</span><textarea id="message" name="Message" required></textarea></label>
+          <label class="full"><span class="label">Message</span><textarea id="message" name="Message" required></textarea></label>
           <button class="btn primary" type="submit">Send message</button>
         </form>
       </div>
